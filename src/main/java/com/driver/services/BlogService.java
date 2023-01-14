@@ -67,6 +67,7 @@ public class BlogService {
         List<Image> imgList = blog.getImageList();
         if(imgList == null)
             imgList = new ArrayList<>();
+        imgList.add(image);
         blog.setImageList(imgList);
         blogRepository1.save(blog);
     }

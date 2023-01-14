@@ -42,6 +42,7 @@ public class ImageService {
     }
 
     public Image findById(int id) {
+
         return imageRepository2.findById(id).get();
     }
 
