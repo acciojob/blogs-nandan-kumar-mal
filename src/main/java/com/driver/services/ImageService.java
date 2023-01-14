@@ -54,6 +54,8 @@ public class ImageService {
             Integer maxImageLength = Integer.parseInt(screenDimensions.split("X")[0]) / Integer.parseInt(image.getDimensions().split("X")[0]);
 
             Integer maxImageBreadth = Integer.parseInt(screenDimensions.split("X")[1])/ Integer.parseInt(image.getDimensions().split("X")[1]);
+
+            return maxImageLength * maxImageBreadth;
         }
         return 0;
 
